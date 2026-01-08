@@ -50,6 +50,8 @@ sudo update-alternatives --install /usr/bin/editor editor /usr/bin/nvim 100
 sudo update-alternatives --set editor /usr/bin/nvim
 sudo chsh -s /usr/bin/fish "$USER"
 
+sudo tic -x ghostty.terminfo
+
 # curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 sudo ibv_devinfo
