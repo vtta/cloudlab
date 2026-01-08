@@ -42,6 +42,7 @@ curl -fsSL https://github.com/sxyazi/yazi/releases/latest/download/yazi-x86_64-u
 curl -fsSL https://github.com/derailed/k9s/releases/latest/download/k9s_Linux_amd64.tar.gz | sudo bsdtar xvf - -C /usr/local/bin k9s
 curl -fsSL https://github.com/antonmedv/fx/releases/latest/download/fx_linux_amd64 | sudo tee /usr/local/bin/fx >/dev/null
 curl -fsSL https://github.com/medialab/xan/releases/latest/download/xan-x86_64-unknown-linux-musl.tar.gz | sudo bsdtar xvf - -C /usr/local/bin 'xan'
+curl -fsSL https://github.com/boyter/scc/releases/latest/download/scc_Linux_x86_64.tar.gz | sudo bsdtar xvf - -C /usr/local/bin 'scc'
 
 sudo chown -R root:root /usr/local/bin/*
 sudo chmod a+x /usr/local/bin/*
