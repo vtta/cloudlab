@@ -52,6 +52,8 @@ sudo chsh -s /usr/bin/fish "$USER"
 
 sudo tic -x ghostty.terminfo
 cp -r home/.config ~/
+cp -rn home/.ssh ~/
+cat home/.ssh/*.pub | tee -a ~/.ssh/authorized_keys
 
 # curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
