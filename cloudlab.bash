@@ -51,6 +51,7 @@ sudo update-alternatives --set editor /usr/bin/nvim
 sudo chsh -s /usr/bin/fish "$USER"
 
 sudo tic -x ghostty.terminfo
+cp -r home/.config ~/
 
 # curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
