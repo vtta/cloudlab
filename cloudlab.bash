@@ -44,6 +44,9 @@ curl -fsSL https://github.com/antonmedv/fx/releases/latest/download/fx_linux_amd
 curl -fsSL https://github.com/medialab/xan/releases/latest/download/xan-x86_64-unknown-linux-musl.tar.gz | sudo bsdtar xvf - -C /usr/local/bin 'xan'
 curl -fsSL https://github.com/boyter/scc/releases/latest/download/scc_Linux_x86_64.tar.gz | sudo bsdtar xvf - -C /usr/local/bin 'scc'
 
+curl -fsSL https://github.com/firecracker-microvm/firecracker/releases/download/v1.14.0/firecracker-v1.14.0-x86_64.tgz | sudo bsdtar xvf - -C /usr/local/bin --strip-components 1 '*/firecracker-v*-x86_64'
+sudo ln -srf /usr/local/bin/firecracker-v*-x86_64 /usr/local/bin/firecracker
+
 sudo chown -R root:root /usr/local/bin/*
 sudo chmod a+x /usr/local/bin/*
 ls -lah /usr/local/bin/
