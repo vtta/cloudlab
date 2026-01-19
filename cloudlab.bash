@@ -32,7 +32,7 @@ sudo add-apt-repository -y ppa:neovim-ppa/unstable
 sudo apt update
 sudo apt -y upgrade
 sudo apt -y autoremove
-sudo apt -y install doca-all fish neovim tree-sitter-cli python3-pynvim ripgrep fd-find fzf zoxide eza tree jq libarchive-tools luarocks apt-file bmon net-tools rsync git tmux rustup golang python3-dev python3-venv libibverbs-dev libssl-dev rlwrap nodejs cmake redis protobuf-compiler
+sudo apt -y install doca-all fish neovim tree-sitter-cli python3-pynvim ripgrep fd-find fzf zoxide eza tree jq libarchive-tools luarocks apt-file bmon net-tools rsync git tmux rustup golang python3-dev python3-venv python3-requests libibverbs-dev libssl-dev rlwrap nodejs cmake redis protobuf-compiler
 sudo ln -srf /usr/bin/fdfind /usr/bin/fd
 
 curl -fsSL https://github.com/jesseduffield/lazygit/releases/download/v0.56.0/lazygit_0.56.0_Linux_x86_64.tar.gz | sudo bsdtar xvf - -C /usr/local/bin lazygit
