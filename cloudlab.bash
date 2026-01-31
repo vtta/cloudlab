@@ -46,6 +46,7 @@ curl -fsSL https://github.com/boyter/scc/releases/latest/download/scc_Linux_x86_
 
 curl -fsSL https://github.com/firecracker-microvm/firecracker/releases/download/v1.14.0/firecracker-v1.14.0-x86_64.tgz | sudo bsdtar xvf - -C /usr/local/bin --strip-components 1 '*/firecracker-v*-x86_64'
 sudo ln -srf /usr/local/bin/firecracker-v*-x86_64 /usr/local/bin/firecracker
+curl -fsSL https://github.com/cloud-hypervisor/cloud-hypervisor/releases/latest/download/cloud-hypervisor-static | sudo tee /usr/local/bin/cloud-hypervisor >/dev/null
 
 sudo chown -R root:root /usr/local/bin/*
 sudo chmod a+x /usr/local/bin/*
